@@ -32,8 +32,6 @@ class TwoColumnTemplate(FPDF):
         self.ttl_wid = 190
         self.side_wid = 60
         self.side_x = 10
-        self.main_x = self.side_wid + self.side_x + 10
-        self.main_wid = self.ttl_wid - self.side_wid - 10
         self.indent_wid = 4
         self.hr_sep_pos = 32
         self.add_page()
@@ -47,6 +45,14 @@ class TwoColumnTemplate(FPDF):
         self.lightFont = 'Ubuntu-Light'
         self.lightItalicFont = 'Ubuntu-LightItalic'
         self.regularFont = 'Ubuntu'
+
+    @property
+    def main_x(self):
+        return self.side_wid + self.side_x + 10
+
+    @property
+    def main_wid(self):
+        return self.ttl_wid - self.side_wid - 10
 
     def updatePosition0(func):
         "A decorator function mainly used to check if the parameters are valid or not. It also updates the cursor position after inserting the given data"
