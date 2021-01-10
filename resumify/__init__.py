@@ -1,1 +1,1 @@
-from .resume import Template0, Template1
+from .resume import SingleColumnTemplate, TwoColumnTemplate

@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# ****************************************************************************
+# * Software: resumify                                                       *
+# * Version:  1.1.1                                                          *
+# * License:  MIT License                                                    *
+# *                                                                          *
+# * Maintainer:  Devansh Soni (sonidev0201@gmail.com)                        *
+# ****************************************************************************
+
 from pathlib import Path
 import math
 import os
@@ -29,9 +39,9 @@ class TwoColumnTemplate(FPDF):
         self.add_page()
 
         # Add ubuntu fonts
-        self.add_font('Ubuntu-LightItalic', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-LightItalic.ttf'), uni=True)
-        self.add_font('Ubuntu-Light', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-Light.ttf'), uni=True)
-        self.add_font('Ubuntu', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-Regular.ttf'), uni=True)
+        self.add_font('Ubuntu-LightItalic', '', os.path.join(BASE_DIR, 'resumify/fonts/Ubuntu/Ubuntu-LightItalic.ttf'), uni=True)
+        self.add_font('Ubuntu-Light', '', os.path.join(BASE_DIR, 'resumify/fonts/Ubuntu/Ubuntu-Light.ttf'), uni=True)
+        self.add_font('Ubuntu', '', os.path.join(BASE_DIR, 'resumify/fonts/Ubuntu/Ubuntu-Regular.ttf'), uni=True)
 
         # Set fonts
         self.lightFont = 'Ubuntu-Light'
@@ -332,9 +342,9 @@ class SingleColumnTemplate(FPDF):
         self.add_page()
 
         # Add fonts
-        self.add_font('Ubuntu-LightItalic', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-LightItalic.ttf'), uni=True)
-        self.add_font('Ubuntu-Light', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-Light.ttf'), uni=True)
-        self.add_font('Ubuntu', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-Regular.ttf'), uni=True)
+        self.add_font('Ubuntu-LightItalic', '', os.path.join(BASE_DIR, 'resumify/fonts/Ubuntu/Ubuntu-LightItalic.ttf'), uni=True)
+        self.add_font('Ubuntu-Light', '', os.path.join(BASE_DIR, 'resumify/fonts/Ubuntu/Ubuntu-Light.ttf'), uni=True)
+        self.add_font('Ubuntu', '', os.path.join(BASE_DIR, 'resumify/fonts/Ubuntu/Ubuntu-Regular.ttf'), uni=True)
 
         # Set fonts
         self.lightFont = 'Ubuntu-Light'
@@ -364,7 +374,7 @@ class SingleColumnTemplate(FPDF):
 
     def insert_bullet(self, h):
         "Insert a bullet point in the page"
-        
+
         self.cell(self.indent_wid, h, txt=bullet, border=border_val, ln=0, align="L")
 
     def top_head(self, name, bolds, contact_info):
