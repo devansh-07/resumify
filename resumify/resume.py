@@ -26,9 +26,9 @@ class Template0(FPDF):
         self.indent_wid = 4
         self.hr_sep_pos = 32
         self.add_page()
-        self.add_font('Ubuntu-LightItalic', '', os.path.join(BASE_DIR, 'Ubuntu/Ubuntu-LightItalic.ttf'), uni=True)
-        self.add_font('Ubuntu-Light', '', os.path.join(BASE_DIR, 'Ubuntu/Ubuntu-Light.ttf'), uni=True)
-        self.add_font('Ubuntu', '', os.path.join(BASE_DIR, 'Ubuntu/Ubuntu-Regular.ttf'), uni=True)
+        self.add_font('Ubuntu-LightItalic', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-LightItalic.ttf'), uni=True)
+        self.add_font('Ubuntu-Light', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-Light.ttf'), uni=True)
+        self.add_font('Ubuntu', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-Regular.ttf'), uni=True)
 
     def updatePosition0(func):
         def update(self, param, *args):
@@ -295,9 +295,9 @@ class Template1(FPDF):
         self.hr_sep_pos = 32
         self.indent_wid = 4
         self.add_page()
-        self.add_font('Ubuntu-LightItalic', '', os.path.join(BASE_DIR, 'Ubuntu/Ubuntu-LightItalic.ttf'), uni=True)
-        self.add_font('Ubuntu-Light', '', os.path.join(BASE_DIR, 'Ubuntu/Ubuntu-Light.ttf'), uni=True)
-        self.add_font('Ubuntu', '', os.path.join(BASE_DIR, 'Ubuntu/Ubuntu-Regular.ttf'), uni=True)
+        self.add_font('Ubuntu-LightItalic', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-LightItalic.ttf'), uni=True)
+        self.add_font('Ubuntu-Light', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-Light.ttf'), uni=True)
+        self.add_font('Ubuntu', '', os.path.join(BASE_DIR, 'resumify/Ubuntu/Ubuntu-Regular.ttf'), uni=True)
 
     def updatePosition1(func):
         def update(self, param, *args):
