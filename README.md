@@ -1,2 +1,2 @@
 # resumify
-A Python package which uses fpdf library to create Resumes.
+A Python package which uses fpdf library for creating resumes.
