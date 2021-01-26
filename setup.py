@@ -11,7 +11,7 @@ setuptools.setup(
     name='resumify',
     license="MIT",
     description='A Python package which uses fpdf library to create Resume.',
-    version='v1.0.0',
+    version='v1.1.7',
     long_description=README,
     url='https://github.com/devansh-07/resumify',
     packages=setuptools.find_packages(),
